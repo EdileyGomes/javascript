@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de introdução ao DOM</title>
+    <style>
+        body {
+            background-color: rgb(65, 147, 241);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1 id="h11" >Iniciando Assuntos com DOM</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">a</a>
+                </li>
+                <li>
+                    <a href="#">b</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em Mim</div>
+    <button>Vermelho</button>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        //document.write('Está Escrito assim em tal parte: ' + p1.innerText)
+        p1.style.color = 'blue'
+        cor = 'red'
+        corpo.style.background = cor
+        //document.write(p1.innerHTML)
+        //alert(p1.innerText)
+        /* var h1 = window.document.getElementById('h11')
+        h1.style.background = 'green'
+        h1.style.padding = '10px'
+        h1.style.borderRadius = '20px'
+        h1.style.textAlign = 'center'
+        h1.style.width = '700px'
+        h1.style.display = 'flex'
+        var div11 = document.getElementById('div1')
+        div1.style.display = 'flex'
+        div1.style.justifyContent = 'space-between' */
+        var d = document.querySelector('div#div1')
+        d.style.color = 'blue'
+
+        /* Temos como selecionar elementos de diversas formas, sendo eles:
+
+
+        POR MARCAR - SIMPLESMENTE COLOCAR A MARCA DA TAG
+        POR ID - USANDO O GETELEMENTSBYID
+        POR NOME - USANDO O GET ELEMENTSBYNAME
+        POR CLASSE - USANDO O GETELEMENTSBYCLASS
+        POR SELETOR - USANDO O QUERYSELECTOR
+
+        */
+
+        
+    </script>
+</body>
+</html>
