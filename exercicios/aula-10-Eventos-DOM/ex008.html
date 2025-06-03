@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sla</title>
+</head>
+<body>
+    <h1>Teste do Guanabarão</h1>
+        <input type="number" name="ntxt1" id="ntxt1" >
+        <input type="number" name="ntxt2" id="ntxt2" >
+        <input type="button" value="somar" onclick="somar()">
+    <p id="res">O Valor vai ser: </p>
+    <script>
+        function somar(){
+            var num1 = document.getElementById('ntxt1')
+            var num2 = document.getElementById('ntxt2')
+            var res = document.getElementById('res')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var calc = n1 + n2
+            res.innerHTML = `O Valor de ${n1} + ${n2} = ${calc}`
+        }
+    </script>
+</body>
+</html>
