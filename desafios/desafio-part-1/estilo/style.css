@@ -24,8 +24,13 @@ footer {
 }
 
 img {
-    width: 500px;
+    width: 400px;
     margin: auto;
     border-radius: 50%;
-    position: relative;
+}
+
+#foto, #msg{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
